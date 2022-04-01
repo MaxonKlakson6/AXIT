@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap");
 .price__wrapper {
   width: 1508px;
   background-color: #F5F5F5;
@@ -19,9 +18,10 @@
     .price .price__list .list__column {
       width: 370px;
       height: 510px;
-      background-color: #F5F5F5; }
+      background-color: #F5F5F5;
+      transition: .5s; }
       .price .price__list .list__column:hover {
-        align-self: flex-start;
+        transform: translate(0, -20px);
         box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.2); }
       .price .price__list .list__column .column__title {
         padding: 13px 0;

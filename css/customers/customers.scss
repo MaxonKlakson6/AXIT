@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
 @mixin fonts ($font-family, $font-size, $font-weight, $color) {
     font-family: $font-family;
     font-size: $font-size;
@@ -32,12 +29,12 @@
                 align-items: center;
                 margin-bottom: 66px;
 
-                background-image: url('images/message.png');
+                background-image: url('../../images/customers/message.png');
 
                 text-align: center;
 
                 &::before{
-                    content: url('images/triangle.png');
+                    content: url('../../images/customers/triangle.png');
                     position: absolute;
                     top: 180px;
                     right: 270px;

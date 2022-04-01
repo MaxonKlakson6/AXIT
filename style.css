@@ -1,7 +1,9 @@
-@import url(about/about.css);
-@import url(customers/customers.css);
-@import url(pricing/pricing.css);
-@import url(tabs/tabs.css);
-@import url(general/general.css);
-@import url(general/zero.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap');
+
+@import url(css/about/about.css);
+@import url(css/customers/customers.css);
+@import url(css/pricing/pricing.css);
+@import url(css/tabs/tabs.css);
+@import url(css/general/general.css);
+@import url(css/general/zero.css);
 /*# sourceMappingURL=style.css.map */
