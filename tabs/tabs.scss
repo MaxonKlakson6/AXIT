@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@mixin fontz ($clr, $ff, $fsize, $fwgt) {
+    color: $clr;
+    font-family: $ff;
+    font-size: $fsize;
+    font-weight: $fwgt;
+    font-style: normal;
+}
+
+.tabs{
+    width: 1170px;
+    height: 540px;
+    margin: 100px auto 0;
+
+    .tabs__nav-btn{
+        width: 184px;
+        padding: 10px;
+        @include fontz ( #333, Open Sans, 14px, 400);
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        border-bottom: 0;
+
+
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .tabs__nav-btn--active{
+        position: relative;
+        outline: 0;
+        border: 1px solid #C6CBCD;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: 0;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 182px;
+            height: 4px;
+            background-color: #fff;
+            top: 38px;
+            left: 0px;    
+        }
+            
+    }
+
+}
+.hidden{
+    display: none;
+}
+.tabs__content-box{
+    display: flex;
+    height: 500px;
+    text-align: left;
+    padding-left: 100px;
+    border: 1px solid #C6CBCD;
+
+    
+
+    .tabs__column{
+        padding-right: 30px;
+
+        .tabs__title{
+            @include fontz ( #000, Open Sans, 30px, 700);
+
+            height: 124px;
+            line-height: 124px;
+            vertical-align: middle;
+        }
+    
+        .tabs__text{
+            height: 210px;
+            margin: 27px 0 27px 0;
+            @include fontz ( #000, Raleway, 18px, 400);
+            line-height: 21px;
+            overflow: auto;
+        }
+        .tabs__btn{
+            width: 270px;
+            padding: 20px;
+            border: 0;
+            @include fontz ( #fff, Open Sans, 18px, 600);
+
+            background-color: #EC7979;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #AB4949;
+            }
+
+            &:active{
+                background-color: #EC7979;
+                box-shadow: inset 0 0 10px 0 #AB4949;
+            }
+        }
+    }
+}
+
+#itab-2{
+    width: 470px;
+}
+
+#itab-3{
+    width: 470px;
+}

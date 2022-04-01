@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.tabs {
+  width: 1170px;
+  height: 540px;
+  margin: 100px auto 0; }
+  .tabs .tabs__nav-btn {
+    width: 184px;
+    padding: 10px;
+    color: #333;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    background-color: white;
+    cursor: pointer; }
+  .tabs .tabs__nav-btn--active {
+    position: relative;
+    outline: 0;
+    border: 1px solid #C6CBCD;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 0; }
+    .tabs .tabs__nav-btn--active::after {
+      content: '';
+      position: absolute;
+      width: 182px;
+      height: 4px;
+      background-color: #fff;
+      top: 38px;
+      left: 0px; }
+
+.hidden {
+  display: none; }
+
+.tabs__content-box {
+  display: flex;
+  height: 500px;
+  text-align: left;
+  padding-left: 100px;
+  border: 1px solid #C6CBCD; }
+  .tabs__content-box .tabs__column {
+    padding-right: 30px; }
+    .tabs__content-box .tabs__column .tabs__title {
+      color: #000;
+      font-family: Open Sans;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: normal;
+      height: 124px;
+      line-height: 124px;
+      vertical-align: middle; }
+    .tabs__content-box .tabs__column .tabs__text {
+      height: 210px;
+      margin: 27px 0 27px 0;
+      color: #000;
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 21px;
+      overflow: auto; }
+    .tabs__content-box .tabs__column .tabs__btn {
+      width: 270px;
+      padding: 20px;
+      border: 0;
+      color: #fff;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 600;
+      font-style: normal;
+      background-color: #EC7979;
+      cursor: pointer; }
+      .tabs__content-box .tabs__column .tabs__btn:hover {
+        background-color: #AB4949; }
+      .tabs__content-box .tabs__column .tabs__btn:active {
+        background-color: #EC7979;
+        box-shadow: inset 0 0 10px 0 #AB4949; }
+
+#itab-2 {
+  width: 470px; }
+
+#itab-3 {
+  width: 470px; }
+
+/*# sourceMappingURL=tabs.css.map */

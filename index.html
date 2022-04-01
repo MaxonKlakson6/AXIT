@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about/about.css">
+    <link rel="stylesheet" href="pricing/pricing.css">
+    <link rel="stylesheet" href="tabs/tabs.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tabs">
+        <button id="tab-1" class="tabs__nav-btn tabs__nav-btn--active" onclick= chooseActiveTab(this)>
+            tab 1
+        </button>
+        <button id="tab-2" class="tabs__nav-btn" onclick= chooseActiveTab(this)>
+            tab 2
+        </button>
+        <button id="tab-3" class="tabs__nav-btn" onclick= chooseActiveTab(this)>
+            tab 3
+        </button>
+        <div class="tabs__content-box">
+            <div class="tabs__column" id="Ctab-1">
+                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br> euismod<br>
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br> viverra<br>
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.<br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    <br>bibendum laoreet.
+                </p>
+                <button class="tabs__btn">Download</button>
+            </div>
+            <img src="tabs/images/liberty.png" alt="" class="tabs__image" id="itab-1">
+
+            <div class="tabs__column hidden" id="Ctab-2">
+                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                <p class="tabs__text">LOKJs OOOO OOOOO das amet, consectetur adipiscing elit. Aenean<br> euismod<br>
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br> viverra<br>
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.<br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    <br>bibendum laoreet.
+                </p>
+                <button class="tabs__btn">Download</button>
+            </div>
+            <img src="tabs/images/fun-dog.jpg" alt="" class="tabs__image hidden" id="itab-2">
+            
+
+            <div class="tabs__column hidden" id="Ctab-3">
+                <h3 class="tabs__title">TTTT with TTTT transitioning effect.</h3>
+                <p class="tabs__text">TTTT ipsum dolor sit amet, TTTT adipiscing TTTT. TTTT<br> euismod<br>
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br> viverra<br>
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.<br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    <br>bibendum laoreet.
+                </p>
+                <button class="tabs__btn">Download</button>
+            </div>
+            <img src="tabs/images/monkey.jpg" alt="" class="tabs__image hidden" id="itab-3">
+        </div>
+    </div>
+    <div class="about">
+        <header class="about__header">
+            <h2 class="about__title">
+                WHY THIS IS AWESOME
+            </h2>
+            <hr class="about__hr" color="#EC7979">
+            <p class="about__subtitle raleway__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </header>
+        <div class="about__info-block">
+            <div class="about__column">
+                <img src="about/images/bulb.png" alt="" class="icon">
+                <h4 class="column__title">Thoughtful Design</h4>
+                <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+                    elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+            </div>
+            <div class="about__column">
+                <img src="about/images/keyboard.png" alt="" class="icon">
+                <h4 class="column__title">Thoughtful Design</h4>
+                <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+                    elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+            </div>
+            <div class="about__column">
+                <img src="about/images/lightning.png" alt="" class="icon">
+                <h4 class="column__title">Thoughtful Design</h4>
+                <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+                    elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+            </div>
+        </div>
+    </div>
+    <div class="price__wrapper">
+        <div class="price">
+            <header class="price__header">
+                <h2 class="price__title">
+                    pricing options
+                </h2>
+                <hr class="price__hr" color="#EC7979">
+                <p class="price__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </header>
+                <div class="price__list">
+                    <div class="list__column">
+                        <h4 class="column__title">Basic</h4>
+                        <h3 class="column__price">$<span style="font-size: 28px;">10</span></h3>
+                        <h5 class="column__term">Free for life</h5>
+                        <ul class="services__list">
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="list__column">
+                        <h4 class="column__title">Optima</h4>
+                        <h3 class="column__price">$<span style="font-size: 28px;">20</span></h3>
+                        <h5 class="column__term">Free for life</h5>
+                        <ul class="services__list">
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                        </ul>
+                    </div>
+        
+                    <div class="list__column">
+                        <h4 class="column__title">Pro</h4>
+                        <h3 class="column__price">$<span style="font-size: 28px;">30</span></h3>
+                        <h5 class="column__term">Free for life</h5>
+                        <ul class="services__list">
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                            <li>1 gb of space</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="tabs/tabs.js"></script>
+</html>
