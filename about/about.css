@@ -2,29 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 .about {
   max-width: 1170px;
-  margin: 50px auto 0;
+  margin: 0 auto;
   padding: 0 15px; }
-  .about .about__header {
-    text-align: center;
-    margin-top: 50px; }
-    .about .about__header .about__title {
-      font-family: Raleway;
-      font-size: 36px;
-      font-weight: 400;
-      color: #000;
-      margin: 0;
-      height: 150px;
-      line-height: 150px;
-      vertical-align: middle; }
-    .about .about__header .about__hr {
-      width: 170px;
-      margin: 0 auto; }
-    .about .about__header .about__subtitle {
-      font-family: Raleway;
-      font-size: 18px;
-      font-weight: 400;
-      color: #86878B;
-      margin: 40px 0 0; }
   .about .about__info-block {
     display: flex;
     margin: 110px auto 60px;
@@ -38,7 +17,7 @@
         font-weight: 700;
         color: #000;
         height: 82px;
-        margin: 39px 0 0;
+        margin: 15px 0 0;
         line-height: 82px;
         vertical-align: middle; }
       .about .about__info-block .about__column .column__text {

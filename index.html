@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about/about.css">
-    <link rel="stylesheet" href="pricing/pricing.css">
-    <link rel="stylesheet" href="tabs/tabs.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="tabs">
-        <button id="tab-1" class="tabs__nav-btn tabs__nav-btn--active" onclick= chooseActiveTab(this)>
+        <button id="tab-1" class="tabs__nav-btn tabs__nav-btn--active" onclick=chooseActiveTab(this)>
             tab 1
         </button>
-        <button id="tab-2" class="tabs__nav-btn" onclick= chooseActiveTab(this)>
+        <button id="tab-2" class="tabs__nav-btn" onclick=chooseActiveTab(this)>
             tab 2
         </button>
-        <button id="tab-3" class="tabs__nav-btn" onclick= chooseActiveTab(this)>
+        <button id="tab-3" class="tabs__nav-btn" onclick=chooseActiveTab(this)>
             tab 3
         </button>
         <div class="tabs__content-box">
@@ -48,7 +48,7 @@
                 <button class="tabs__btn">Download</button>
             </div>
             <img src="tabs/images/fun-dog.jpg" alt="" class="tabs__image hidden" id="itab-2">
-            
+
 
             <div class="tabs__column hidden" id="Ctab-3">
                 <h3 class="tabs__title">TTTT with TTTT transitioning effect.</h3>
@@ -66,12 +66,12 @@
         </div>
     </div>
     <div class="about">
-        <header class="about__header">
-            <h2 class="about__title">
+        <header class="general__header">
+            <h2 class="general__title">
                 WHY THIS IS AWESOME
             </h2>
-            <hr class="about__hr" color="#EC7979">
-            <p class="about__subtitle raleway__subtitle">
+            <hr class="general__hr" color="#EC7979">
+            <p class="general__subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
         </header>
@@ -98,60 +98,123 @@
     </div>
     <div class="price__wrapper">
         <div class="price">
-            <header class="price__header">
-                <h2 class="price__title">
+            <header class="general__header">
+                <h2 class="general__title">
                     pricing options
                 </h2>
-                <hr class="price__hr" color="#EC7979">
-                <p class="price__subtitle">
+                <hr class="general__hr" color="#EC7979">
+                <p class="general__subtitle">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </header>
-                <div class="price__list">
-                    <div class="list__column">
-                        <h4 class="column__title">Basic</h4>
-                        <h3 class="column__price">$<span style="font-size: 28px;">10</span></h3>
-                        <h5 class="column__term">Free for life</h5>
-                        <ul class="services__list">
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="list__column">
-                        <h4 class="column__title">Optima</h4>
-                        <h3 class="column__price">$<span style="font-size: 28px;">20</span></h3>
-                        <h5 class="column__term">Free for life</h5>
-                        <ul class="services__list">
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                        </ul>
-                    </div>
-        
-                    <div class="list__column">
-                        <h4 class="column__title">Pro</h4>
-                        <h3 class="column__price">$<span style="font-size: 28px;">30</span></h3>
-                        <h5 class="column__term">Free for life</h5>
-                        <ul class="services__list">
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                            <li>1 gb of space</li>
-                        </ul>
+            <div class="price__list">
+                <div class="list__column">
+                    <h4 class="column__title">Basic</h4>
+                    <h3 class="column__price">$<span style="font-size: 28px;">10</span></h3>
+                    <h5 class="column__term">Free for life</h5>
+                    <ul class="services__list">
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                    </ul>
+                </div>
+
+                <div class="list__column">
+                    <h4 class="column__title">Optima</h4>
+                    <h3 class="column__price">$<span style="font-size: 28px;">20</span></h3>
+                    <h5 class="column__term">Free for life</h5>
+                    <ul class="services__list">
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                    </ul>
+                </div>
+
+                <div class="list__column">
+                    <h4 class="column__title">Pro</h4>
+                    <h3 class="column__price">$<span style="font-size: 28px;">30</span></h3>
+                    <h5 class="column__term">Free for life</h5>
+                    <ul class="services__list">
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                        <li>1 gb of space</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customers">
+        <header class="general__header">
+            <h2 class="general__title">
+                what our customers are saying
+            </h2>
+            <hr class="general__hr" color="#EC7979">
+            <p class="general__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </header>
+
+        <div class="customers__list">
+            <div class="customers__item">
+                <div class="item__message">
+                    <p class="message__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                        similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </p>
+                </div>
+                <div class="item__info">
+                    <img src="customers/images/Davis.png" alt="">
+                    <div class="item__text-holder">
+                        <h4 class="item__name">Davis Rhiel Madsen</h4>
+                        <p class="item__position">Manager</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="customers__item">
+                <div class="item__message">
+                    <p class="message__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                        similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </p>
+                </div>
+                <div class="item__info">
+                    <img src="customers/images/Jaydon.png" alt="">
+                    <div class="item__text-holder">
+                        <h4 class="item__name">Jaydon Rosser</h4>
+                        <p class="item__position">Manager</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customers__item">
+                <div class="item__message">
+                    <p class="message__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                        similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </p>
+                </div>
+                <div class="item__info">
+                    <img src="customers/images/Cooper.png" alt="">
+                    <div class="item__text-holder">
+                        <h4 class="item__name">Cooper Dorwart</h4>
+                        <p class="item__position">Manager</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script src="tabs/tabs.js"></script>
+
 </html>

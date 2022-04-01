@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+@mixin fonts ($font-family, $font-size, $font-weight, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+.customers{
+    width: 1170px;
+    margin: 0 auto 200px;
+
+    .customers__list{
+        
+
+        display: flex;
+        margin: 83px 0 0;
+        justify-content: space-between;
+        
+        .customers__item{
+            width: 370px;
+
+            display: flex;
+            flex-direction: column;
+            
+            .item__message{
+                position: relative;
+                height: 180px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 66px;
+
+                background-image: url('images/message.png');
+
+                text-align: center;
+
+                &::before{
+                    content: url('images/triangle.png');
+                    position: absolute;
+                    top: 180px;
+                    right: 270px;
+                }
+
+                .message__text{
+                    @include fonts(Raleway, 18px, 400, #86878B);
+                    line-height: 21.13px;
+                }
+            }
+            .item__info {
+                display: flex;
+
+                .item__text-holder{
+                    margin-left: 30px;
+                    .item__name {
+                        @include fonts(Open Sans, 24px, 700, #000);
+                    }
+    
+                    .item__position {
+                        @include fonts(Raleway, 18px, 400, #000);
+                    }
+                }
+            }
+        }
+    }
+}
