@@ -59,6 +59,7 @@
         background-color: #fff;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+        text-transform: capitalize; }
 
 /*# sourceMappingURL=pricing.css.map */
