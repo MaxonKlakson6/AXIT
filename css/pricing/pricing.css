@@ -1,5 +1,5 @@
 .price__wrapper {
-  width: 1508px;
+  width: 100%;
   background-color: #F5F5F5;
   margin: auto; }
 
@@ -14,11 +14,9 @@
     align-items: flex-end;
     max-width: 1170px;
     height: 528px;
-    margin-top: 59px; }
+    margin-top: 79px; }
     .price .price__list .list__column {
       width: 370px;
-      height: 510px;
-      background-color: #F5F5F5;
       transition: .5s; }
       .price .price__list .list__column:hover {
         transform: translate(0, -20px);
