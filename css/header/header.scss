@@ -1,0 +1,169 @@
+@mixin fonts ($font-family, $font-size, $font-weight, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+.nav-bar{
+    z-index: 10;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-bar__logo{
+        margin: 0 471px 0 115px;
+    }
+
+    .nav-bar__menu{
+        margin-right: 170px;
+        width: 570px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar__menu a{
+        @include fonts(Open Sans, 14px, 600, #fff);
+        font-style: normal;
+        width: 114px;
+
+        text-decoration: none;
+        line-height: 75px;
+        vertical-align: middle;
+        text-align: center;
+
+        &:hover{
+            background-color: #EC7979;
+        }
+
+        &:active{
+            background-color: #AB4949;
+        }
+    }
+}
+
+.header{
+    background-image: url('../../images/header/header-bg.png');
+    margin: 75px auto 0 auto;
+    max-width: 1510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+    }
+
+    .header-column{
+        margin: 208px 30px 185px 0;
+        z-index: 1;
+
+        .column__title{
+            @include fonts(Raleway, 48px, 500, #fff);
+
+            margin: 40px 0 55px 0;
+            width: 670px;
+        }
+
+        .column__hr{
+            width: 170px;
+            border: 0.5px solid #fff;
+            margin-bottom: 42px;
+        }
+        .column__text{
+            @include fonts(Raleway, 18px, 400, #fff);
+            margin-bottom: 42px;
+        }
+
+        .column__btn{
+            @include fonts (Open Sans, 18px, 600, #fff);
+            width: 270px;
+            height: 58px;
+            background-color: transparent;
+            border: 2px solid #fff;
+
+            &:hover{
+                cursor: pointer;
+                border: 2px solid #EC7979;
+                color: #EC7979;
+            }
+            &:active{
+                border: 2px solid #AB4949;
+                background-color: #AB4949;
+                color: #fff;
+            }
+        }
+    }
+
+    .header__form{
+        width: 470px;
+        z-index: 1;
+        align-self: start;
+        margin-top: 208px;
+        
+        text-align: center;
+        
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #fff;
+        border-radius: 10px;
+
+        .form__title{
+            @include fonts(Open Sans, 24px, 700, #333);
+            height: 90px;
+            line-height: 90px;
+            vertical-align: middle;
+            margin-bottom: 45px;
+
+            span{
+                color: #EC7979;
+            }
+        }
+
+        input{
+            @include fonts(Open Sans, 14px, 400, #BDBDBD);
+            width: 370px;
+            height: 38px;
+            margin: 0 50px 33px 50px;
+
+            border: 0;
+            border-bottom: 1px solid #BDBDBD;
+
+            &:focus{
+                outline: 0;
+            }
+        }
+
+        
+        .form__btn{
+            @include fonts(Open Sans, 15px, 600, #fff);
+            line-height: 20px;
+            height: 60px;
+            margin-top: 42px;
+
+            border: 0;
+            background-color: #EC7979;
+            border-radius: 0 0 10px 10px;
+
+            &:hover{
+                cursor: pointer;
+                background-color:#AB4949;
+            }
+
+            &:active{
+                background-color: #EC7979;
+                box-shadow: inset 0 0 10px 0 #AB4949;
+            }
+        }
+    }
+}
