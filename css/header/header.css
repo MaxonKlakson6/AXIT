@@ -29,42 +29,48 @@
     .nav-bar .nav-bar__menu a:active {
       background-color: #AB4949; }
 
-.header {
+.banner {
   background-image: url("../../images/header/header-bg.png");
   margin: 75px auto 0 auto;
   max-width: 1510px;
+  height: 1026px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; }
-  .header::before {
+  position: relative;
+  background-repeat: no-repeat; }
+  .banner::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #000;
     opacity: 0.5; }
-  .header .header-column {
+  .banner .banner-column {
     margin: 208px 30px 185px 0;
     z-index: 1; }
-    .header .header-column .column__title {
+    .banner .banner-column .column__title {
       font-family: Raleway;
       font-size: 48px;
       font-weight: 500;
       color: #fff;
       margin: 40px 0 55px 0;
       width: 670px; }
-    .header .header-column .column__hr {
+    .banner .banner-column .column__hr {
       width: 170px;
-      border: 0.5px solid #fff;
+      border: 0;
+      border-top: 1px solid #fff;
       margin-bottom: 42px; }
-    .header .header-column .column__text {
+    .banner .banner-column .column__text {
       font-family: Raleway;
       font-size: 18px;
       font-weight: 400;
       color: #fff;
+      max-width: 270px;
+      max-height: 200px;
+      overflow: auto;
       margin-bottom: 42px; }
-    .header .header-column .column__btn {
+    .banner .banner-column .column__btn {
       font-family: Open Sans;
       font-size: 18px;
       font-weight: 600;
@@ -73,15 +79,15 @@
       height: 58px;
       background-color: transparent;
       border: 2px solid #fff; }
-      .header .header-column .column__btn:hover {
+      .banner .banner-column .column__btn:hover {
         cursor: pointer;
         border: 2px solid #EC7979;
         color: #EC7979; }
-      .header .header-column .column__btn:active {
+      .banner .banner-column .column__btn:active {
         border: 2px solid #AB4949;
         background-color: #AB4949;
         color: #fff; }
-  .header .header__form {
+  .banner .banner__form {
     width: 470px;
     z-index: 1;
     align-self: start;
@@ -91,7 +97,7 @@
     flex-direction: column;
     background-color: #fff;
     border-radius: 10px; }
-    .header .header__form .form__title {
+    .banner .banner__form .form__title {
       font-family: Open Sans;
       font-size: 24px;
       font-weight: 700;
@@ -100,9 +106,9 @@
       line-height: 90px;
       vertical-align: middle;
       margin-bottom: 45px; }
-      .header .header__form .form__title span {
+      .banner .banner__form .form__title span {
         color: #EC7979; }
-    .header .header__form input {
+    .banner .banner__form input {
       font-family: Open Sans;
       font-size: 14px;
       font-weight: 400;
@@ -112,9 +118,9 @@
       margin: 0 50px 33px 50px;
       border: 0;
       border-bottom: 1px solid #BDBDBD; }
-      .header .header__form input:focus {
+      .banner .banner__form input:focus {
         outline: 0; }
-    .header .header__form .form__btn {
+    .banner .banner__form .form__btn {
       font-family: Open Sans;
       font-size: 15px;
       font-weight: 600;
@@ -125,10 +131,10 @@
       border: 0;
       background-color: #EC7979;
       border-radius: 0 0 10px 10px; }
-      .header .header__form .form__btn:hover {
+      .banner .banner__form .form__btn:hover {
         cursor: pointer;
         background-color: #AB4949; }
-      .header .header__form .form__btn:active {
+      .banner .banner__form .form__btn:active {
         background-color: #EC7979;
         box-shadow: inset 0 0 10px 0 #AB4949; }
 

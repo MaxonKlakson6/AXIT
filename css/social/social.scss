@@ -1,0 +1,33 @@
+@mixin fonts ($font-family, $font-size, $font-weight, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+.social{
+    background-color:#F8EFEF;
+    display: flex;
+
+    .social__text-place{
+        padding: 0 50px 18px 170px;
+
+        .text-place__title{
+            @include fonts(Open Sans, 24px, 700, #333);
+            height: 60px;
+            line-height: 60px;
+            vertical-align: middle;
+        }
+
+        .text-place__text{
+            @include fonts(Raleway, 18px, 400, #86878B);
+
+            width: 470px;
+        }
+    }
+
+    & img{
+        align-self: center;
+        margin-right: 37px;
+    }
+}

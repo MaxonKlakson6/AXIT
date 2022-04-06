@@ -1,0 +1,58 @@
+.design {
+  margin: 0 auto;
+  max-width: 1510px;
+  background-image: url("../../images/design/design-bg.png");
+  position: relative; }
+  .design::before {
+    content: '';
+    position: absolute;
+    width: 1510px;
+    height: 442px;
+    background-color: #000;
+    opacity: 0.5; }
+  .design .design__header {
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    z-index: 5; }
+    .design .design__header .design__title {
+      font-family: Raleway;
+      font-size: 36px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+      text-transform: uppercase;
+      height: 150px;
+      line-height: 150px;
+      vertical-align: middle; }
+    .design .design__header .design__hr {
+      width: 170px;
+      margin: 0 auto;
+      border: 0;
+      border-top: 1px solid #fff; }
+    .design .design__header .design__subtitle {
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      margin: 40px 0 73px; }
+    .design .design__header .design__btn {
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      width: 370px;
+      height: 58px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      margin-bottom: 50px; }
+      .design .design__header .design__btn:hover {
+        cursor: pointer;
+        border: 2px solid #EC7979;
+        color: #EC7979; }
+      .design .design__header .design__btn:active {
+        border: 2px solid #AB4949;
+        background-color: #AB4949;
+        color: #fff; }
+
+/*# sourceMappingURL=design.css.map */

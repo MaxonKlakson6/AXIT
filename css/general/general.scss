@@ -5,6 +5,11 @@
     color: $color;
 }
 
+.content{
+    width: 1510px;
+    margin: 0 auto;
+}
+
 .general__header{
     text-align: center;
     padding-top: 50px;
@@ -22,6 +27,8 @@
     .general__hr{
         width: 170px;
         margin: 0 auto;
+        border: 0;
+        border-top: 1px solid #EC7979;
     }
         
     .general__subtitle {

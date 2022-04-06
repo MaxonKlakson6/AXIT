@@ -48,7 +48,7 @@ $column-color: #333;
             }
             .column__price{
                 padding: 26px 0;
-                @include fonts(Open Sans ,36px ,700 ,42px ,#fff);
+                @include fonts(Raleway ,36px ,700 ,42px ,#fff);
                 border: $list-border;
 
                 background-color: $column-color;

@@ -1,0 +1,24 @@
+.social {
+  background-color: #F8EFEF;
+  display: flex; }
+  .social .social__text-place {
+    padding: 0 50px 18px 170px; }
+    .social .social__text-place .text-place__title {
+      font-family: Open Sans;
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      height: 60px;
+      line-height: 60px;
+      vertical-align: middle; }
+    .social .social__text-place .text-place__text {
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 400;
+      color: #86878B;
+      width: 470px; }
+  .social img {
+    align-self: center;
+    margin-right: 37px; }
+
+/*# sourceMappingURL=social.css.map */

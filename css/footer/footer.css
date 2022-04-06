@@ -1,0 +1,16 @@
+.footer {
+  background-color: #000;
+  text-align: center; }
+  .footer .icon__holder {
+    padding-top: 35px;
+    margin: 0 auto; }
+    .footer .icon__holder img {
+      margin: 0 0 28px 40px; }
+  .footer .footer__label {
+    padding-bottom: 27px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5); }
+
+/*# sourceMappingURL=footer.css.map */

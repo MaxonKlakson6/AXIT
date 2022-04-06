@@ -1,0 +1,70 @@
+@mixin fonts ($font-family, $font-size, $font-weight, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+.design{
+    margin: 0 auto;
+    max-width: 1510px;
+    background-image: url('../../images/design/design-bg.png');
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 1510px;
+        height: 442px;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .design__header{
+        text-align: center;
+        padding-top: 50px;
+        position: relative;
+        z-index: 5;
+    
+        .design__title{
+            @include fonts(Raleway, 36px, 400, #fff);
+            margin: 0;
+            text-transform: uppercase;
+    
+            height: 150px;
+            line-height: 150px;
+            vertical-align: middle;
+        }
+            
+        .design__hr{
+            width: 170px;
+            margin: 0 auto;
+            border: 0;
+            border-top: 1px solid #fff;
+        }
+            
+        .design__subtitle {
+            @include fonts(Raleway, 18px, 400, #fff);
+    
+            margin: 40px 0 73px;
+        }
+
+        .design__btn{
+            @include fonts (Open Sans, 18px, 600, #fff);
+            width: 370px;
+            height: 58px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            margin-bottom: 50px;
+
+            &:hover{
+                cursor: pointer;
+                border: 2px solid #EC7979;
+                color: #EC7979;
+            }
+            &:active{
+                border: 2px solid #AB4949;
+                background-color: #AB4949;
+                color: #fff;
+            }
+        }
+    }
+}
