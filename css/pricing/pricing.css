@@ -19,6 +19,7 @@
       width: 370px;
       transition: .5s; }
       .price .price__list .list__column:hover {
+        cursor: pointer;
         transform: translate(0, -20px);
         box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.2); }
       .price .price__list .list__column .column__title {

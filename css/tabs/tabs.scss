@@ -8,11 +8,10 @@
 
 .tabs{
     width: 1170px;
-    height: 540px;
     margin: 100px auto 0;
 
     .tabs__nav-btn{
-        width: 184px;
+        width: 201px;
         padding: 10px;
         @include fontz ( #333, Open Sans, 14px, 400);
         text-transform: uppercase;
@@ -35,7 +34,7 @@
         &::after{
             content: '';
             position: absolute;
-            width: 182px;
+            width: 198px;
             height: 4px;
             background-color: #fff;
             top: 38px;

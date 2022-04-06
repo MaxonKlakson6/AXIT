@@ -1,9 +1,8 @@
 .tabs {
   width: 1170px;
-  height: 540px;
   margin: 100px auto 0; }
   .tabs .tabs__nav-btn {
-    width: 184px;
+    width: 201px;
     padding: 10px;
     color: #333;
     font-family: Open Sans;
@@ -25,7 +24,7 @@
     .tabs .tabs__nav-btn--active::after {
       content: '';
       position: absolute;
-      width: 182px;
+      width: 198px;
       height: 4px;
       background-color: #fff;
       top: 38px;
