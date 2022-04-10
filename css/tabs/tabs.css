@@ -24,7 +24,7 @@
     .tabs .tabs__nav-btn--active::after {
       content: '';
       position: absolute;
-      width: 198px;
+      width: 199px;
       height: 4px;
       background-color: #fff;
       top: 38px;
@@ -76,11 +76,8 @@
       .tabs__content-box .tabs__column .tabs__btn:active {
         background-color: #EC7979;
         box-shadow: inset 0 0 10px 0 #AB4949; }
-
-#itab-2 {
-  width: 470px; }
-
-#itab-3 {
-  width: 470px; }
+  .tabs__content-box .tabs__image {
+    max-width: 470px;
+    object-fit: cover; }
 
 /*# sourceMappingURL=tabs.css.map */

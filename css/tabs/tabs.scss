@@ -34,13 +34,12 @@
         &::after{
             content: '';
             position: absolute;
-            width: 198px;
+            width: 199px;
             height: 4px;
             background-color: #fff;
             top: 38px;
             left: 0px;    
         }
-            
     }
 
 }
@@ -93,12 +92,9 @@
             }
         }
     }
-}
 
-#itab-2{
-    width: 470px;
-}
-
-#itab-3{
-    width: 470px;
+    .tabs__image{
+        max-width: 470px;
+        object-fit: cover;
+    }
 }

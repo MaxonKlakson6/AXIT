@@ -24,4 +24,18 @@
         color: #000;
         margin: 8px 0 0; }
 
+@media (max-width: 767px) {
+  .about .about__info-block {
+    flex-direction: column;
+    margin: 90px auto 60px;
+    justify-content: space-between;
+    text-align: center; }
+    .about .about__info-block .about__column {
+      margin: 0 15px; }
+      .about .about__info-block .about__column .column__title {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000; } }
+
 /*# sourceMappingURL=about.css.map */

@@ -27,16 +27,21 @@
           font-size: 18px;
           font-weight: 400;
           color: #86878B;
-          line-height: 21.13px; }
+          line-height: 21.13px;
+          padding: 0 20px; }
       .customers .customers__list .customers__item .item__info {
         display: flex; }
+        .customers .customers__list .customers__item .item__info .avatar {
+          align-self: start; }
         .customers .customers__list .customers__item .item__info .item__text-holder {
           margin-left: 30px; }
           .customers .customers__list .customers__item .item__info .item__text-holder .item__name {
             font-family: Open Sans;
             font-size: 24px;
             font-weight: 700;
-            color: #000; }
+            color: #000;
+            line-height: 54px;
+            margin-bottom: 15px; }
           .customers .customers__list .customers__item .item__info .item__text-holder .item__position {
             font-family: Raleway;
             font-size: 18px;

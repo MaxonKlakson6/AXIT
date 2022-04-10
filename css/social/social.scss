@@ -21,12 +21,11 @@
 
         .text-place__text{
             @include fonts(Raleway, 18px, 400, #86878B);
-
             width: 470px;
         }
     }
 
-    & img{
+    & a{
         align-self: center;
         margin-right: 37px;
     }

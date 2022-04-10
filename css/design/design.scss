@@ -6,14 +6,15 @@
 }
 .design{
     margin: 0 auto;
-    max-width: 1510px;
     background-image: url('../../images/design/design-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 
     &::before{
         content: '';
         position: absolute;
-        width: 1510px;
+        width: 100%;
         height: 442px;
         background-color: #000;
         opacity: 0.5;
