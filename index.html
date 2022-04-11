@@ -13,21 +13,11 @@
     <nav class="nav-bar">
         <img src="images/header/mini-logo.png" alt="" class="nav-bar__logo">
         <div class="nav-bar__menu">
-            <a href="">
-                Features
-            </a>
-            <a href="">
-                About
-            </a>
-            <a href="">
-                Pricing
-            </a>
-            <a href="">
-                Reviews
-            </a>
-            <a href="">
-                Contact
-            </a>
+            <a href="">Features</a>
+            <a href="">About</a>
+            <a href="">Pricing</a>
+            <a href="">Reviews</a>
+            <a href="">Contact</a>
         </div>
     </nav>
     <div class="content">
@@ -43,8 +33,8 @@
             <form action="" class="banner__form">
                 <h4 class="form__title">Try Your <span>FREE</span> Trial Today</h4>
                 <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Password">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
                 <button class="form__btn">Get Started</button>
             </form>
         </div>
@@ -54,12 +44,13 @@
                 <p class="text-place__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Aenean euismod bibendum laoreet.</p>
             </div>
-            <img src="images/social/twitter_icon.svg" alt="">
-            <img src="images/social/linkedin_icon.svg" alt="">
-            <img src="images/social/pinterest_icon.svg" alt="">
-            <img src="images/social/instagram_icon.svg" alt="">
-            <img src="images/social/github_icon.svg" alt="">
-            <img src="images/social/rss_icon.svg" alt="">
+            <a href="https://www.facebook.com/" target="blank"><img src="images/social/facebook_icon.svg" alt=""></a>
+            <a href="https://twitter.com/" target="blank"><img src="images/social/twitter_icon.svg" alt=""></a>
+            <a href="https://www.linkedin.com/" target="blank"><img src="images/social/linkedin_icon.svg" alt=""></a>
+            <a href="https://www.pinterest.com/" target="blank"><img src="images/social/pinterest_icon.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="images/social/instagram_icon.svg" alt=""></a>
+            <a href="https://github.com/" target="blank"><img src="images/social/github_icon.svg" alt=""></a>
+            <a href="https://rss.com/" target="blank"><img src="images/social/rss_icon.svg" alt=""></a>
         </div>  
         <div class="tabs">
             <button id="tab-1" class="tabs__nav-btn tabs__nav-btn--active" onclick=chooseActiveTab(this)>
@@ -223,7 +214,7 @@
                         </p>
                     </div>
                     <div class="item__info">
-                        <img src="images/customers/Davis.png" alt="">
+                        <img src="images/customers/Davis.png" alt="" class="avatar">
                         <div class="item__text-holder">
                             <h4 class="item__name">Davis Rhiel Madsen</h4>
                             <p class="item__position">Manager</p>
@@ -239,7 +230,7 @@
                         </p>
                     </div>
                     <div class="item__info">
-                        <img src="images/customers/Jaydon.png" alt="">
+                        <img src="images/customers/Jaydon.png" alt="" class="avatar">
                         <div class="item__text-holder">
                             <h4 class="item__name">Jaydon Rosser</h4>
                             <p class="item__position">Manager</p>
@@ -255,7 +246,7 @@
                         </p>
                     </div>
                     <div class="item__info">
-                        <img src="images/customers/Cooper.png" alt="">
+                        <img src="images/customers/Cooper.png" alt="" class="avatar">
                         <div class="item__text-holder">
                             <h4 class="item__name">Cooper Dorwart</h4>
                             <p class="item__position">Manager</p>
@@ -276,15 +267,34 @@
                 <button class="design__btn">Download</button>
             </header>
         </div>
+        <div class="contact">
+            <header class="general__header">
+                <h2 class="general__title">contact us</h2>
+                <hr class="general__hr">
+                <p class="general__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </header>
+            <form action="" class="contact__form">
+                <div class="user-info">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password" class="last">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class="form__message"></textarea>
+                </div>
+                <button class="form__btn">Send Message</button>
+            </form>
+        </div>
     </div>
     <footer class="footer">
         <div class="icon__holder">
-            <img src="images/footer/facebook_icon.svg" alt="">
-            <img src="images/footer/twitter_icon.svg" alt="">
-            <img src="images/footer/linkedin_icon.svg" alt="">
-            <img src="images/footer/pinterest_icon.svg" alt="">
-            <img src="images/footer/instagram_icon.svg" alt="">
-            <img src="images/footer/rss_icon.svg" alt="">
+            <a href="https://www.facebook.com/" target="blank"><img src="images/footer/facebook_icon.svg" alt=""></a>
+            <a href="https://twitter.com/" target="blank"><img src="images/footer/twitter_icon.svg" alt=""></a>
+            <a href="https://www.linkedin.com/" target="blank"><img src="images/footer/linkedin_icon.svg" alt=""></a>
+            <a href="https://www.pinterest.com/" target="blank"><img src="images/footer/pinterest_icon.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="images/footer/instagram_icon.svg" alt=""></a>
+            <a href="https://github.com/" target="blank"><img src="images/footer/github_icon.svg" alt=""></a>
+            <a href="https://rss.com/" target="blank"><img src="images/footer/rss_icon.svg" alt=""></a>
         </div>
         <p class="footer__label">© 2015 Axure Themes</p>
     </footer>
