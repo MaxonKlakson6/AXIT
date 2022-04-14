@@ -2,15 +2,34 @@
   background-color: #000;
   text-align: center; }
   .footer .icon__holder {
+    max-width: 550px;
     padding-top: 35px;
-    margin: 0 auto; }
-    .footer .icon__holder img {
-      margin: 0 0 28px 40px; }
+    margin: 0 auto 28px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between; }
   .footer .footer__label {
     padding-bottom: 27px;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5); }
+
+@media (max-width: 1024px) {
+  .footer .icon__holder {
+    max-width: 460px; }
+    .footer .icon__holder img {
+      width: 45px; }
+  .footer .footer__label {
+    padding-bottom: 30px;
+    font-size: 14px; } }
+@media (max-width: 768px) {
+  .footer .icon__holder {
+    max-width: 278px;
+    margin: 0 auto 42px; }
+    .footer .icon__holder img {
+      width: 29px; }
+  .footer .footer__label {
+    padding-bottom: 45px; } }
 
 /*# sourceMappingURL=footer.css.map */

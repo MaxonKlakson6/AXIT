@@ -4,11 +4,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
+  .design .design__wrapper {
+    padding: 0 16px; }
   .design::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 442px;
+    height: 100%;
     background-color: #000;
     opacity: 0.5; }
   .design .design__header {
@@ -21,11 +23,8 @@
       font-size: 36px;
       font-weight: 400;
       color: #fff;
-      margin: 0;
-      text-transform: uppercase;
-      height: 150px;
-      line-height: 150px;
-      vertical-align: middle; }
+      padding: 54px 0;
+      text-transform: uppercase; }
     .design .design__header .design__hr {
       width: 170px;
       margin: 0 auto;
@@ -55,5 +54,27 @@
         border: 2px solid #AB4949;
         background-color: #AB4949;
         color: #fff; }
+
+@media (max-width: 1024px) {
+  .design .design__header .design__title {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    padding: 46px 0; }
+  .design .design__header .design__hr {
+    width: 142px; }
+  .design .design__header .design__subtitle {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: 32px 0; }
+  .design .design__header .design__btn {
+    width: 288px;
+    margin-bottom: 58px; } }
+@media (max-width: 768px) {
+  .design .design__header {
+    padding-top: 0; } }
 
 /*# sourceMappingURL=design.css.map */

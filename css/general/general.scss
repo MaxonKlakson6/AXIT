@@ -5,22 +5,14 @@
     color: $color;
 }
 
-.content{
-    margin: 0 auto;
-}
-
 .general__header{
     text-align: center;
     padding-top: 50px;
 
     .general__title{
         @include fonts(Raleway, 36px, 400, #000);
-        margin: 0;
+        padding: 54px 0;
         text-transform: uppercase;
-
-        height: 150px;
-        line-height: 150px;
-        vertical-align: middle;
     }
         
     .general__hr{
@@ -34,5 +26,36 @@
         @include fonts(Raleway, 18px, 400, #86878B);
 
         margin: 40px 0 0;
+    }
+}
+
+@media(max-width: 1024px){
+    .general__header{
+        padding-top: 50px;
+    
+        .general__title{
+            @include fonts(Raleway, 24px, 400, #000);
+            padding: 46px 0;
+        }
+            
+        .general__hr{
+            width: 142px;
+        }
+            
+        .general__subtitle {
+            @include fonts(Raleway, 14px, 400, #86878B);
+    
+            margin: 32px 0 0;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .general__header{
+        padding-top: 0;
+
+        .general__subtitle {
+            margin: 24px 0 0;
+        }
     }
 }

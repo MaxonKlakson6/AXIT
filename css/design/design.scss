@@ -11,11 +11,15 @@
     background-size: cover;
     position: relative;
 
+    .design__wrapper{
+        padding: 0 16px;
+    }
+
     &::before{
         content: '';
         position: absolute;
         width: 100%;
-        height: 442px;
+        height: 100%;
         background-color: #000;
         opacity: 0.5;
     }
@@ -27,12 +31,8 @@
     
         .design__title{
             @include fonts(Raleway, 36px, 400, #fff);
-            margin: 0;
+            padding: 54px 0;
             text-transform: uppercase;
-    
-            height: 150px;
-            line-height: 150px;
-            vertical-align: middle;
         }
             
         .design__hr{
@@ -66,6 +66,40 @@
                 background-color: #AB4949;
                 color: #fff;
             }
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .design{    
+        .design__header{
+            .design__title{
+                @include fonts(Raleway, 24px, 400, #fff);
+                padding: 46px 0;
+            }
+                
+            .design__hr{
+                width: 142px;
+            }
+                
+            .design__subtitle {
+                @include fonts(Raleway, 14px, 400, #fff);
+        
+                margin: 32px 0;
+            }
+    
+            .design__btn{
+                width: 288px;
+                margin-bottom: 58px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .design{
+        .design__header{
+            padding-top: 0;
         }
     }
 }

@@ -11,13 +11,16 @@
 
 <body>
     <nav class="nav-bar">
-        <img src="images/header/mini-logo.png" alt="" class="nav-bar__logo">
+        <div class="column-above">
+            <img src="images/header/mini-logo.png" alt="" class="nav-bar__logo">
+            <button class="menu" onclick=changeMenuState(this)></button>
+        </div>
         <div class="nav-bar__menu">
-            <a href="">Features</a>
-            <a href="">About</a>
-            <a href="">Pricing</a>
-            <a href="">Reviews</a>
-            <a href="">Contact</a>
+            <a href="" class="link">Features</a>
+            <a href="" class="link">About</a>
+            <a href="" class="link">Pricing</a>
+            <a href="" class="link">Reviews</a>
+            <a href="" class="link">Contact</a>
         </div>
     </nav>
     <div class="content">
@@ -29,7 +32,6 @@
                 <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <button class="column__btn">Download</button>
             </div>
-    
             <form action="" class="banner__form">
                 <h4 class="form__title">Try Your <span>FREE</span> Trial Today</h4>
                 <input type="text" placeholder="Name">
@@ -41,64 +43,73 @@
         <div class="social">
             <div class="social__text-place">
                 <h4 class="text-place__title">Social Media</h4>
-                <p class="text-place__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <p class="text-place__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean euismod bibendum laoreet.</p>
             </div>
-            <a href="https://www.facebook.com/" target="blank"><img src="images/social/facebook_icon.svg" alt=""></a>
-            <a href="https://twitter.com/" target="blank"><img src="images/social/twitter_icon.svg" alt=""></a>
-            <a href="https://www.linkedin.com/" target="blank"><img src="images/social/linkedin_icon.svg" alt=""></a>
-            <a href="https://www.pinterest.com/" target="blank"><img src="images/social/pinterest_icon.svg" alt=""></a>
-            <a href="https://www.instagram.com/" target="blank"><img src="images/social/instagram_icon.svg" alt=""></a>
-            <a href="https://github.com/" target="blank"><img src="images/social/github_icon.svg" alt=""></a>
-            <a href="https://rss.com/" target="blank"><img src="images/social/rss_icon.svg" alt=""></a>
-        </div>  
+            <div class="logos-holder">
+                <a href="https://www.facebook.com/" target="blank"><img src="images/social/facebook_icon.svg"
+                        alt=""></a>
+                <a href="https://twitter.com/" target="blank"><img src="images/social/twitter_icon.svg" alt=""></a>
+                <a href="https://www.linkedin.com/" target="blank"><img src="images/social/linkedin_icon.svg"
+                        alt=""></a>
+                <a href="https://www.pinterest.com/" target="blank"><img src="images/social/pinterest_icon.svg"
+                        alt=""></a>
+                <a href="https://www.instagram.com/" target="blank"><img src="images/social/instagram_icon.svg"
+                        alt=""></a>
+                <a href="https://github.com/" target="blank"><img src="images/social/github_icon.svg" alt=""></a>
+                <a href="https://rss.com/" target="blank"><img src="images/social/rss_icon.svg" alt=""></a>
+            </div>
+        </div>
         <div class="tabs">
-            <button id="tab-1" class="tabs__nav-btn tabs__nav-btn--active" onclick=chooseActiveTab(this)>
-                tab 1
-            </button>
-            <button id="tab-2" class="tabs__nav-btn" onclick=chooseActiveTab(this)>
-                tab 2
-            </button>
-            <button id="tab-3" class="tabs__nav-btn" onclick=chooseActiveTab(this)>
-                tab 3
-            </button>
+            <div class="btn-holder">
+                <button id="tab-1" class="tabs__nav-btn tabs__nav-btn--active" onclick=chooseActiveTab(this)>
+                    tab 1
+                </button>
+                <button id="tab-2" class="tabs__nav-btn" onclick=chooseActiveTab(this)>
+                    tab 2
+                </button>
+                <button id="tab-3" class="tabs__nav-btn" onclick=chooseActiveTab(this)>
+                    tab 3
+                </button>
+            </div>
             <div class="tabs__content-box">
                 <div class="tabs__column" id="Ctab-1">
                     <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
-                    <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br> euismod<br>
+                    <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
+                        euismod<br>
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br> viverra<br>
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                         penatibus et magnis dis parturient montes.<br><br>
-    
+
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         <br>bibendum laoreet.
                     </p>
                     <button class="tabs__btn">Download</button>
                 </div>
                 <img src="images/tabs/liberty.png" alt="" class="tabs__image" id="itab-1">
-    
+
                 <div class="tabs__column hidden" id="Ctab-2">
                     <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
                     <p class="tabs__text">LOKJs OOOO OOOOO das amet, consectetur adipiscing elit. Aenean<br> euismod<br>
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br> viverra<br>
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                         penatibus et magnis dis parturient montes.<br><br>
-    
+
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         <br>bibendum laoreet.
                     </p>
                     <button class="tabs__btn">Download</button>
                 </div>
                 <img src="images/tabs/fun-dog.jpg" alt="" class="tabs__image hidden" id="itab-2">
-    
-    
+
+
                 <div class="tabs__column hidden" id="Ctab-3">
                     <h3 class="tabs__title">TTTT with TTTT transitioning effect.</h3>
                     <p class="tabs__text">TTTT ipsum dolor sit amet, TTTT adipiscing TTTT. TTTT<br> euismod<br>
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br> viverra<br>
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                         penatibus et magnis dis parturient montes.<br><br>
-    
+
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         <br>bibendum laoreet.
                     </p>
@@ -109,11 +120,11 @@
         </div>
         <div class="about">
             <header class="general__header">
-                <h2 class="general__title">
+                <h2 class="general__title about__title">
                     WHY THIS IS AWESOME
                 </h2>
                 <hr class="general__hr">
-                <p class="general__subtitle">
+                <p class="general__subtitle about__subtitle">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </header>
@@ -122,19 +133,22 @@
                     <img src="images/about/bulb.svg" alt="" class="icon">
                     <h4 class="column__title">Thoughtful Design</h4>
                     <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
-                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
                 </div>
                 <div class="about__column">
                     <img src="images/about/keyboard.svg" alt="" class="icon">
                     <h4 class="column__title">Thoughtful Design</h4>
                     <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
-                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
                 </div>
                 <div class="about__column">
                     <img src="images/about/lightning.svg" alt="" class="icon">
                     <h4 class="column__title">Thoughtful Design</h4>
                     <p class="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
-                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
                 </div>
             </div>
         </div>
@@ -163,7 +177,7 @@
                             <li>1 gb of space</li>
                         </ul>
                     </div>
-    
+
                     <div class="list__column">
                         <h4 class="column__title">Optima</h4>
                         <h3 class="column__price">$20</span></h3>
@@ -177,7 +191,7 @@
                             <li>1 gb of space</li>
                         </ul>
                     </div>
-    
+
                     <div class="list__column">
                         <h4 class="column__title">Pro</h4>
                         <h3 class="column__price">$30</h3>
@@ -204,15 +218,17 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </header>
-    
+
             <div class="customers__list">
                 <div class="customers__item">
                     <div class="item__message">
                         <p class="message__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                            repellat
                             similique odio aspernatur ex, architecto eaque quo suscipit.
                         </p>
                     </div>
+                    <img src="images/customers/triangle.png" alt="" class="triangle">
                     <div class="item__info">
                         <img src="images/customers/Davis.png" alt="" class="avatar">
                         <div class="item__text-holder">
@@ -221,14 +237,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="customers__item">
                     <div class="item__message">
                         <p class="message__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                            repellat
                             similique odio aspernatur ex, architecto eaque quo suscipit.
                         </p>
                     </div>
+                    <img src="images/customers/triangle.png" alt="" class="triangle">
                     <div class="item__info">
                         <img src="images/customers/Jaydon.png" alt="" class="avatar">
                         <div class="item__text-holder">
@@ -237,14 +255,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="customers__item">
                     <div class="item__message">
                         <p class="message__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
+                            repellat
                             similique odio aspernatur ex, architecto eaque quo suscipit.
                         </p>
                     </div>
+                    <img src="images/customers/triangle.png" alt="" class="triangle">
                     <div class="item__info">
                         <img src="images/customers/Cooper.png" alt="" class="avatar">
                         <div class="item__text-holder">
@@ -254,22 +274,30 @@
                     </div>
                 </div>
             </div>
+            <div class="slider-menu">
+                <button class="slider__button"></button>
+                <button class="slider__button"></button>
+                <button class="slider__button"></button>
+            </div>
         </div>
         <div class="design">
-            <header class="design__header">
-                <h2 class="design__title">
-                    what our customers are saying
-                </h2>
-                <hr class="design__hr">
-                <p class="design__subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button class="design__btn">Download</button>
-            </header>
+            <div class="design__wrapper">
+                <header class="design__header">
+                    <h2 class="design__title">
+                        STYLISH AXURE DESIGN
+                    </h2>
+                    <hr class="design__hr">
+                    <p class="design__subtitle">
+                        Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than
+                        ever!
+                    </p>
+                    <button class="design__btn">Download</button>
+                </header>
+            </div>
         </div>
         <div class="contact">
             <header class="general__header">
-                <h2 class="general__title">contact us</h2>
+                <h2 class="general__title tablet">contact us</h2>
                 <hr class="general__hr">
                 <p class="general__subtitle">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -280,7 +308,8 @@
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Password" class="last">
-                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class="form__message"></textarea>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"
+                        class="form__message"></textarea>
                 </div>
                 <button class="form__btn">Send Message</button>
             </form>

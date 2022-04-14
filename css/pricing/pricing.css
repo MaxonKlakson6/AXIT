@@ -4,15 +4,12 @@
 
 .price {
   max-width: 1170px;
-  margin: 50px auto 0;
+  margin: 0 auto;
   padding-bottom: 50px; }
   .price .price__list {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    align-items: flex-end;
-    max-width: 1170px;
-    height: 528px;
     margin-top: 79px; }
     .price .price__list .list__column {
       width: 370px;
@@ -31,7 +28,7 @@
         border: 1px solid #F5F5F5;
         background-color: #333; }
       .price .price__list .list__column .column__price {
-        padding: 26px 0;
+        padding: 28px 0;
         font-family: Raleway;
         font-size: 36px;
         font-weight: 700;
@@ -61,5 +58,41 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         text-transform: capitalize; }
+
+@media (max-width: 1024px) {
+  .price {
+    padding: 0 16px 50px; }
+    .price .price__list {
+      margin-top: 50px; }
+      .price .price__list .list__column {
+        width: 317px; }
+        .price .price__list .list__column .column__title {
+          padding: 11px 0; }
+        .price .price__list .list__column .column__price {
+          padding: 22px 0; }
+        .price .price__list .list__column .column__term {
+          padding: 11px 0; }
+        .price .price__list .list__column .services__list li {
+          padding: 10.5px 0; } }
+@media (max-width: 768px) {
+  .price {
+    padding-bottom: 26px; }
+    .price .price__list {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center; }
+      .price .price__list .list__column {
+        width: 288px;
+        margin-top: 25px; }
+        .price .price__list .list__column:hover {
+          transform: translate(0, -18px); }
+        .price .price__list .list__column .column__title {
+          padding: 7px 0; }
+        .price .price__list .list__column .column__price {
+          padding: 17px 0; }
+        .price .price__list .list__column .column__term {
+          padding: 11px 0; }
+        .price .price__list .list__column .services__list li {
+          padding: 8.5px 0; } }
 
 /*# sourceMappingURL=pricing.css.map */

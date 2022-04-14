@@ -1,8 +1,10 @@
 .social {
   background-color: #F8EFEF;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .social .social__text-place {
-    padding: 0 50px 18px 170px; }
+    max-width: 470px;
+    padding: 0 50px 18px 0; }
     .social .social__text-place .text-place__title {
       font-family: Open Sans;
       font-size: 24px;
@@ -15,10 +17,60 @@
       font-family: Raleway;
       font-size: 18px;
       font-weight: 400;
-      color: #86878B;
-      width: 470px; }
-  .social a {
-    align-self: center;
-    margin-right: 37px; }
+      color: #86878B; }
+  .social .logos-holder {
+    width: 706px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center; }
+
+@media (max-width: 1024px) {
+  .social .social__text-place {
+    max-width: 402px;
+    padding: 0 35px 13px 16px; }
+    .social .social__text-place .text-place__title {
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 700;
+      color: #333;
+      height: 45px;
+      line-height: 45px;
+      vertical-align: middle; }
+    .social .social__text-place .text-place__text {
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 400;
+      color: #86878B; }
+  .social .logos-holder img {
+    width: 64px; } }
+@media (max-width: 768px) {
+  .social {
+    align-items: center;
+    flex-direction: column; }
+    .social .social__text-place {
+      max-width: 271px;
+      padding: 31px 0 34px 0;
+      text-align: center; }
+      .social .social__text-place .text-place__title {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        height: 45px;
+        line-height: 45px; }
+      .social .social__text-place .text-place__text {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        color: #86878B;
+        padding: 0 10px; }
+    .social .logos-holder {
+      width: 288px;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      margin-bottom: 44px; }
+      .social .logos-holder img {
+        width: 26px; } }
 
 /*# sourceMappingURL=social.css.map */

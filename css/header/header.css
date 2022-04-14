@@ -1,17 +1,22 @@
 .nav-bar {
   z-index: 10;
   width: 100%;
-  margin: 0 auto;
   background-color: #000;
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: space-between; }
-  .nav-bar .nav-bar__logo {
-    margin: 0 471px 0 115px; }
+  justify-content: space-around; }
+  .nav-bar .menu {
+    display: none;
+    width: 55px;
+    height: 56px;
+    align-self: center;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../../images/header/menu.svg"); }
   .nav-bar .nav-bar__menu {
-    margin-right: 170px;
-    width: 570px;
+    max-width: 570px;
     display: flex;
     justify-content: space-between; }
   .nav-bar .nav-bar__menu a {
@@ -34,7 +39,6 @@
   background-image: url("../../images/header/header-bg.png");
   background-size: cover;
   margin: 75px auto 0 auto;
-  height: 1026px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,15 +52,15 @@
     background-color: #000;
     opacity: 0.5; }
   .banner .banner-column {
-    margin: 208px 30px 185px 0;
+    max-width: 670px;
+    margin: 208px 30px 185px;
     z-index: 1; }
     .banner .banner-column .column__title {
       font-family: Raleway;
       font-size: 48px;
       font-weight: 500;
       color: #fff;
-      margin: 40px 0 55px 0;
-      width: 670px; }
+      margin: 40px 0 55px 0; }
     .banner .banner-column .column__hr {
       width: 170px;
       border: 0;
@@ -68,7 +72,6 @@
       font-weight: 400;
       color: #fff;
       max-width: 270px;
-      max-height: 200px;
       overflow: auto;
       margin-bottom: 42px; }
     .banner .banner-column .column__btn {
@@ -89,7 +92,6 @@
         background-color: #AB4949;
         color: #fff; }
   .banner .banner__form {
-    width: 470px;
     z-index: 1;
     align-self: start;
     margin-top: 208px;
@@ -114,7 +116,7 @@
       font-size: 14px;
       font-weight: 400;
       color: #BDBDBD;
-      width: 370px;
+      width: 470px;
       height: 38px;
       margin: 0 50px 33px 50px;
       border: 0;
@@ -138,5 +140,123 @@
       .banner .banner__form .form__btn:active {
         background-color: #EC7979;
         box-shadow: inset 0 0 10px 0 #AB4949; }
+
+@media (max-width: 1024px) {
+  .banner {
+    justify-content: flex-end; }
+    .banner .banner-column {
+      max-width: 454px;
+      margin: 137px 36px 131px 0;
+      z-index: 1; }
+      .banner .banner-column img {
+        max-width: 183px;
+        max-height: 74px; }
+      .banner .banner-column .column__title {
+        font-family: Raleway;
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+        margin: 37px 0 41px 0; }
+      .banner .banner-column .column__hr {
+        width: 115px;
+        margin-bottom: 31px; }
+      .banner .banner-column .column__text {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        max-width: 183px;
+        overflow: auto;
+        margin-bottom: 42px; }
+      .banner .banner-column .column__btn {
+        width: 183px;
+        height: 54px; }
+        .banner .banner-column .column__btn:hover {
+          cursor: pointer;
+          border: 2px solid #EC7979;
+          color: #EC7979; }
+        .banner .banner-column .column__btn:active {
+          border: 2px solid #AB4949;
+          background-color: #AB4949;
+          color: #fff; }
+    .banner .banner__form {
+      margin: 137px 20px 0 0; }
+      .banner .banner__form input {
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        color: #BDBDBD;
+        width: 298px;
+        height: 35px; } }
+@media (max-width: 768px) {
+  .nav-bar {
+    transition: .7s;
+    flex-direction: column; }
+    .nav-bar .column-above {
+      display: flex;
+      justify-content: space-around; }
+    .nav-bar .nav-bar__logo {
+      max-width: 130px;
+      margin-left: 20px;
+      object-fit: contain; }
+    .nav-bar .menu {
+      display: block; }
+    .nav-bar .nav-bar__menu {
+      max-width: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 181px; }
+    .nav-bar .nav-bar__menu a {
+      width: 100%;
+      display: none;
+      line-height: 67px;
+      vertical-align: middle; }
+
+  .banner {
+    margin: 56px auto 0 auto;
+    flex-direction: column;
+    align-items: center; }
+    .banner .banner-column {
+      max-width: 288px;
+      text-align: center;
+      margin: 84px 16px 56px; }
+      .banner .banner-column img {
+        display: none; }
+      .banner .banner-column .column__title {
+        font-family: Raleway;
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+        margin: 0 0 44px; }
+      .banner .banner-column .column__hr {
+        width: 134px;
+        margin: 0 auto;
+        margin-bottom: 42px; }
+      .banner .banner-column .column__text {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        max-width: 277px;
+        overflow: auto;
+        margin-bottom: 42px; }
+      .banner .banner-column .column__btn {
+        width: 288px;
+        height: 50px; }
+    .banner .banner__form {
+      margin: 0 auto 50px; }
+      .banner .banner__form .form__title {
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 0; }
+      .banner .banner__form input {
+        width: 240px;
+        margin: 0 28px 33px 20px; }
+      .banner .banner__form .form__btn {
+        margin-top: 18px; } }
 
 /*# sourceMappingURL=header.css.map */
