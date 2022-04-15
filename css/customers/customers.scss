@@ -140,12 +140,13 @@
 @media(max-width: 768px){
     .customers{
         margin: 0 auto 31px;
-    
+        max-width: 288px;
+        overflow: hidden;
+        
         .customers__list{
             margin: 24px auto 0;
-            max-width: 288px;
             overflow: hidden;
-            
+
             .customers__item{
                 min-width: 288px;
     

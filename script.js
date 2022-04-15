@@ -21,13 +21,8 @@ const changeMenuState = (btn) => {
         links.forEach((item) => item.style.display = 'none');
         return;
     }
-
+    
     btn.style.backgroundImage = 'url("images/header/close.svg")';
     menu.style.display = 'flex';
     links.forEach((item) => item.style.display = "block");
 }
-
-let item = document.querySelector('.customers__item');
-let move = item.offsetWidth;
-const itemContainer = document.querySelector('.customers__list');
-itemContainer.style.transform = `trasnlateX:${move}px`;
