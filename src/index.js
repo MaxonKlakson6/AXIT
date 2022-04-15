@@ -1,0 +1,12 @@
+import './css/fonts/fonts.scss';
+import './css/header/header.scss';
+import './css/about/about.scss';
+import './css/customers/customers.scss';
+import './css/pricing/pricing.scss';
+import './css/tabs/tabs.scss';
+import './css/general/general.scss';
+import './css/general/zero.css';
+import './css/design/design.scss';
+import './css/social/social.scss';
+import './css/footer/footer.scss';
+import './css/contact/contact.scss';

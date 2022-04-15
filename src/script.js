@@ -6,8 +6,8 @@ const chooseActiveTab = (tab) => {
     const id = tab.getAttribute('id');
 
     tab.classList.add('tabs__nav-btn--active');
-    document.querySelector('#C' + id).classList.remove('hidden');
-    document.querySelector('#i' + id).classList.remove('hidden');
+    document.querySelector(`#C${id}`).classList.remove('hidden');
+    document.querySelector(`#i${id}`).classList.remove('hidden');
 }
 
 const changeMenuState = (btn) => {
@@ -15,7 +15,7 @@ const changeMenuState = (btn) => {
     const links = document.querySelectorAll('.link');
     let isActive = btn.style.backgroundImage.toString();
 
-    if(isActive == 'url("images/header/close.svg")'){
+    if(isActive.includes('url("images/header/close.svg")')){
         btn.style.backgroundImage = "url('images/header/menu.svg')";
         menu.style.display = 'none';
         links.forEach((item) => item.style.display = 'none');
