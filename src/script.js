@@ -13,16 +13,16 @@ const chooseActiveTab = (tab) => {
 const changeMenuState = (btn) => {
     const menu = document.querySelector('.nav-bar__menu');
     const links = document.querySelectorAll('.link');
-    let isActive = btn.style.backgroundImage.toString();
+    let isActive = btn.classList.contains('menu__is-active');
 
-    if(isActive.includes('url("images/header/close.svg")')){
-        btn.style.backgroundImage = "url('images/header/menu.svg')";
+    if(isActive){
+        btn.classList.remove('menu__is-active');
         menu.style.display = 'none';
         links.forEach((item) => item.style.display = 'none');
         return;
     }
     
-    btn.style.backgroundImage = 'url("images/header/close.svg")';
+    btn.classList.add('menu__is-active');
     menu.style.display = 'flex';
     links.forEach((item) => item.style.display = "block");
 }

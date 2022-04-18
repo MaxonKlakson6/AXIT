@@ -253,6 +253,11 @@
 
         .menu{
             display: block;
+            background-image: url("../../images/header/menu.svg");
+        }
+
+        .menu__is-active{
+            background-image: url("../../images/header/close.svg");
         }
     
         .nav-bar__menu{
