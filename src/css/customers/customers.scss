@@ -9,10 +9,12 @@
     max-width: 1170px;
     margin: 0 auto 64px;
 
-    .customers__list{
+    .slider{
         display: flex;
         margin: 83px 0 0;
         justify-content: space-between;
+    }
+    .customers__list{
         
         .customers__item{
             max-width: 370px;
@@ -92,9 +94,12 @@
     .customers{
         margin: 0 auto 57px;
         padding: 0 16px;
+
+        .slider{
+            margin: 32px 0 0;
+        }
     
         .customers__list{
-            margin: 32px 0 0;
             
             .customers__item{
                 max-width: 317px;
@@ -142,7 +147,11 @@
         margin: 0 auto 31px;
         max-width: 288px;
         overflow: hidden;
-        
+
+        .slider{
+            transform: translateX(-288px);
+        }
+
         .customers__list{
             margin: 24px auto 0;
             overflow: hidden;
