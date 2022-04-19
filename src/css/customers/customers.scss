@@ -10,9 +10,32 @@
     margin: 0 auto 64px;
 
     .slider{
+        position: relative;
         display: flex;
         margin: 83px 0 0;
         justify-content: space-between;
+    }
+    .switcher{
+        display: none;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        border-radius: 50%;
+        background: rgba(236, 121, 121, .8);
+        position: absolute;
+        cursor: pointer;
+        border: 0;
+        z-index: 3;
+        transition: 0.3s ease;
+        &:hover{
+            background: rgba(171, 73, 73, .8);
+        }
+    }
+    #prev{
+        left: 288px;
+    }
+    #next{
+        right: -288px;
     }
     .customers__list{
         
@@ -94,10 +117,6 @@
     .customers{
         margin: 0 auto 57px;
         padding: 0 16px;
-
-        .slider{
-            margin: 32px 0 0;
-        }
     
         .customers__list{
             
@@ -148,17 +167,31 @@
         max-width: 288px;
         overflow: hidden;
 
+        #next{
+            right: 0;
+        }
+
+        #prev{
+            left: 0;
+        }
         .slider{
+            margin: 32px 0 0;
+            transition: .5s;
             transform: translateX(-288px);
+        }
+
+        .switcher{
+            display: inline;
         }
 
         .customers__list{
             margin: 24px auto 0;
             overflow: hidden;
+            position: relative;
 
             .customers__item{
                 min-width: 288px;
-    
+
                 .item__message{
                     &::before{
                         right: 213px;
